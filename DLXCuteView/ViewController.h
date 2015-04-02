@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KYCuteView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <KYCuteViewDelegate>
 
 
 @end

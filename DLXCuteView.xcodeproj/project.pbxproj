@@ -14,6 +14,7 @@
 		5258D7C71ACD1AD20044293D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5258D7C61ACD1AD20044293D /* Images.xcassets */; };
 		5258D7CA1ACD1AD20044293D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5258D7C81ACD1AD20044293D /* LaunchScreen.xib */; };
 		5258D7D61ACD1AD20044293D /* DLXCuteViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5258D7D51ACD1AD20044293D /* DLXCuteViewTests.m */; };
+		525DADDF1ACD279E00760D02 /* KYCuteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 525DADDE1ACD279E00760D02 /* KYCuteView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		5258D7CF1ACD1AD20044293D /* DLXCuteViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLXCuteViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5258D7D41ACD1AD20044293D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5258D7D51ACD1AD20044293D /* DLXCuteViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLXCuteViewTests.m; sourceTree = "<group>"; };
+		525DADDD1ACD279E00760D02 /* KYCuteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYCuteView.h; sourceTree = "<group>"; };
+		525DADDE1ACD279E00760D02 /* KYCuteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYCuteView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		5258D7B81ACD1AD20044293D /* DLXCuteView */ = {
 			isa = PBXGroup;
 			children = (
+				525DADE01ACD27A500760D02 /* kYCuteView */,
 				5258D7BD1ACD1AD20044293D /* AppDelegate.h */,
 				5258D7BE1ACD1AD20044293D /* AppDelegate.m */,
 				5258D7C01ACD1AD20044293D /* ViewController.h */,
@@ -117,6 +121,15 @@
 				5258D7D41ACD1AD20044293D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		525DADE01ACD27A500760D02 /* kYCuteView */ = {
+			isa = PBXGroup;
+			children = (
+				525DADDD1ACD279E00760D02 /* KYCuteView.h */,
+				525DADDE1ACD279E00760D02 /* KYCuteView.m */,
+			);
+			name = kYCuteView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				5258D7C21ACD1AD20044293D /* ViewController.m in Sources */,
 				5258D7BF1ACD1AD20044293D /* AppDelegate.m in Sources */,
 				5258D7BC1ACD1AD20044293D /* main.m in Sources */,
+				525DADDF1ACD279E00760D02 /* KYCuteView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DLXCuteView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DLXCuteView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +430,7 @@
 				5258D7DB1ACD1AD20044293D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5258D7DC1ACD1AD20044293D /* Build configuration list for PBXNativeTarget "DLXCuteViewTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +439,7 @@
 				5258D7DE1ACD1AD20044293D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
